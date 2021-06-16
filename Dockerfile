@@ -1,4 +1,4 @@
-FROM setmyinfo/setmy-info-centos-node:v10.15.3-1
+FROM setmyinfo/setmy-info-centos-node:latest
 
 MAINTAINER Imre Tabur "imre.tabur@eesti.ee"
 
@@ -21,10 +21,6 @@ COPY . /opt/has/src/
 #RUN npm config set https-proxy http://cache.example.com:8080
 RUN node --version
 RUN cd /opt/has/src && npm install
-
-RUN useradd microservice --shell /sbin/nologin --no-create-home
-RUN chown -R root:root                  /opt/has
-RUN chown -R microservice:microservice  /var/opt/has
 
 EXPOSE 3000
 
