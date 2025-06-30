@@ -1,6 +1,6 @@
 FROM setmyinfo/setmy-info-centos-node:latest
 
-MAINTAINER Imre Tabur "imre.tabur@eesti.ee"
+MAINTAINER Imre Tabur "imre.tabur@mail.ee"
 
 LABEL org.label-schema.name="Docker HUB CentOS Spring boot micro service base" \
       org.label-schema.version="v1.2.0" \
